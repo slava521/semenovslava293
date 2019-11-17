@@ -1,5 +1,3 @@
-@import 'variables';
-
 body{
     font-family: 'Geometria Regular';
     background: @bg-primary;
@@ -7,16 +5,44 @@ body{
 }
 .main{
     display: block;
-    background: url('../../assets/images/йога\ гл\ экран.png');
+    background: url('../../assets/images/bgmain.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 70px 150px 100px;
+    height: 100vh;
+    min-height: 600px;
+
+    &__container {
+        position: relative;
+        height: 100%;
+
+        &__block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+
+            &--top {
+                top: 0;
+            }
+
+            &--bottom {
+                bottom: 0;
+            }
+        }
+
+        &__center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
-.menu{
+.menu {
     display: flex;
-    float: left;
-    position: absolute;
 }
 .menuicon{
     margin-top: 3px;
@@ -38,11 +64,7 @@ body{
 .menu p{
     margin: 0 5px;
 }
-.tel{
-    float: right;
-}
 .relax{
-    padding-top: 120px;
     text-align: center;
     font-size: 30px;
     width: calc(100% - 300px);
