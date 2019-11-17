@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Geometria Regular';
+    src: url('../fonts/Geometria.eot');
+    src: url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria.woff') format('woff'),
+    url('../fonts/Geometria.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Caveat Bold';
+    src: url('../fonts/Caveat-Bold.eot');
+    src: url('../fonts/Caveat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Caveat-Bold.woff') format('woff'),
+    url('../fonts/Caveat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Geometria Regular';
+    background: #FCF8FE;
+    color: #8B7EAC;
+}
+.main{
+    display: block;
+    background: url('../images/йога\ гл\ экран.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 150px 100px;
+}
+.menu{
+    display: flex;
+    float: left;
+    position: absolute;
+}
+.menuicon{
+    margin-top: 3px;
+    display: block;
+    position: relative;
+}
+.menuicon1{
+    background-color: #8B7EAC;
+    width: 24px;
+    height: 1px;
+    margin: 3px;
+}
+.menuicon2{
+    background-color: #8B7EAC;
+    width: 18px;
+    height: 1px;
+    margin: 3px;
+}
+.menu p{
+    margin: 0 5px;
+}
+.tel{
+    float: right;
+}
+.relax{
+    padding-top: 120px;
+    text-align: center;
+    font-size: 30px;
+    width: calc(100% - 300px);
+    font-family: 'Caveat Bold';
+    position: relative;
+}
+.yoga{
+    letter-spacing: 90px;
+    text-align: center;
+    position: relative;
+    font-size: 200px;
+    color: white;
+}
